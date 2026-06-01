@@ -1,0 +1,278 @@
+header{
+    background-color: rgba(1, 1, 86, 0.882);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.institute{
+    display:flex;
+    flex-direction: row;
+}
+.building{
+    font-size: 25px;
+    padding-top:20px;
+    padding-left:10px;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    gap:25px;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+a:hover{
+    background-color:rgb(1, 1, 86);
+}
+a:active{
+    background-color:rgb(1, 1, 86);
+}
+main{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    color:rgba(1, 1, 86, 0.932);
+    
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+.courses{
+    color:rgb(3, 5, 0);
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+}
+.courses li{
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+.container{
+    text-align:center;
+    padding-top:20px;
+}
+table{
+    margin:auto;
+    border-collapse:collapse;
+    width:80%;
+    max-width:600px;
+    background:rgba(186, 201, 197, 0.8);
+}
+th{
+    background:#b5432c;
+    color:white;
+    padding:12px;
+    border:1px solid #8b2f1d;
+    padding-left:30px;
+    padding-right:30px;
+}
+td{
+    padding:12px;
+    border:1px solid #ccc;
+    font-weight:bold;
+}
+.form-container{
+    width:450px;
+    color:white;
+    padding:20px;
+}
+.row{
+    display:flex;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+label{
+    width:120px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    width:180px;
+    height:25px;
+}
+
+textarea{
+    width:250px;
+    height:50px;
+    resize:none;
+}
+
+.gender{
+    display:flex;
+    gap:20px;
+}
+
+button{
+    display:block;
+    margin:20px auto;
+    padding:10px 25px;
+    border:none;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+
+    background:linear-gradient(to bottom,#d84a32,#8f2418);
+    box-shadow:0 4px 8px rgba(0,0,0,0.4);
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    main h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    main h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    iframe{
+        width: 90%;
+        height: 300px;
+        padding: 20px 0;
+        display: block;
+        margin: auto;
+    }
+
+    .courses{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    table{
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+
+    .row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label{
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea{
+        width: 100%;
+    }
+
+    textarea{
+        height: 80px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+    .institute{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .building{
+        padding: 0;
+        font-size: 35px;
+    }
+
+    .institute-name h2{
+        font-size: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main h1{
+        font-size: 24px;
+    }
+
+    main h3{
+        font-size: 16px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 220px;
+    }
+
+    .courses{
+        font-size: 16px;
+    }
+
+    .courses li{
+        font-size: 18px;
+    }
+
+    table{
+        font-size: 12px;
+    }
+
+    th,
+    td{
+        padding: 8px;
+    }
+
+    button{
+        width: 100%;
+    }
+}

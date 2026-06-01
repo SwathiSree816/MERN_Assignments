@@ -1,0 +1,56 @@
+main{
+    margin:20px;
+    margin-left: 40px;
+}
+.label{
+    font-weight:bold;
+
+}
+.star{
+    color:red;
+}
+.name{
+    display:flex;
+    gap:10px;
+}
+.sublabel{
+    font-size:10px;
+    padding:5px;
+    padding-left: 0;
+}
+.form{
+    padding:5px;
+}
+.stars{
+    color:rgb(236, 177, 27);
+    font-size:30px;
+}
+.text{
+    font-size:10px;
+}
+th{
+    font-size:10px;
+    font-weight:normal;
+}
+.colour{
+    background:rgb(247, 246, 246) ;
+    padding: 10px;
+}
+.heading{
+    text-size:8px;
+    text-align: left;
+}
+table{
+    border-spacing: 15px 0px;
+}
+.head{
+    padding-top:15px;
+    padding-bottom:10px;
+}
+input[type="radio"]{
+  width: 18px;
+  height: 18px;
+}
+td{
+    text-align: center;
+}
